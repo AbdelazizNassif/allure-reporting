@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Initialize chrome browser","2","initializeDriver","Surefire suite","Sun Sep 27 12:04:49 UTC 2026","broken","Sun Sep 27 12:04:49 UTC 2026","com.petfinder.tests.regressionE2eTests.loginTests.TestSuccessfulLogin","Surefire test","com.petfinder.tests.regressionE2eTests.loginTests.TestSuccessfulLogin","initializeDriver"
+"This test attempts to log into the website using a login and a password. Fails if any error happens.
+
+Note that this test does not test 2-Factor Authentication.","3","testSuccessfulLogin","Surefire suite","Sun Sep 27 12:04:49 UTC 2026","skipped","Sun Sep 27 12:04:49 UTC 2026","com.petfinder.tests.regressionE2eTests.loginTests.TestSuccessfulLogin","Surefire test","com.petfinder.tests.regressionE2eTests.loginTests.TestSuccessfulLogin","testSuccessfulLogin"
