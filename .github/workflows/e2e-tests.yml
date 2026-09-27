@@ -50,11 +50,14 @@ jobs:
       - name: Run Maven tests
         run: mvn clean test -Dtest="com.petfinder.tests.regressionE2eTests.*.**"
 
-      - name: Set up Allure CLI
-        uses: allure-framework/setup-allure@v1
+      - name: Download and Install Allure CLI
         if: always()
-        with:
-          version: '3.0.0'
+        run: |
+          wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz
+          tar -xvzf allure-2.30.0.tgz
+          sudo mv allure-2.30.0 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/local/bin/allure
+          allure --version
 
       - name: Generate Allure Report
         if: always()
